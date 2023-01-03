@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="E:\web development\web-development practice from instagram\stylesheet.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+    <div class="allpage">
+      <div class="head">
+        <img class="logo" src="https://www.minecraft.net/content/dam/games/minecraft/logos/logo-minecraft.svg">
+      </div>
+      <div class="title_container">
+        <div class="title">
+          <h1 class="text_title">Need Help ?</h1>
+        </div>
+      </div>
+      <div class="content">
+        <div class="text_container">
+          <p class="content_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+  molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+  numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+  optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+  obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+  nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+  tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+  quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
+  sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+  recusandae alias error harum maxime adipisci amet laborum. Perspiciatis
+  minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit
+  quibusdam sed amet </p>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="credit">
+          <span class="me">Developped by <b class="name">ZIGUI</b></span>
+        </div>
+        <div class="social">
+          <div class="first" onclick="insta()">
+            <img class="link fst" src="https://cdn-icons-png.flaticon.com/512/3661/3661391.png">
+            <span class="insta indic" id="insta">Instagram</span>
+          </div>
+          <div class="second" id="second">
+            <img class="link snd" src="https://cdn-icons-png.flaticon.com/512/561/561127.png">
+            <span class="mail indic" id="mail">Mail</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script>
+    function insta(){
+      document.getElementById('insta').innerHTML = '__s__b__j__';
+    }
+
+    const box = document.getElementById("second");
+    const span = document.getElementById("mail");
+
+    box.onclick = function() {
+      document.execCommand("copy");
+    }
+
+    box.addEventListener("copy", function(event) {
+      event.preventDefault();
+      if (event.clipboardData) {
+        event.clipboardData.setData("text/plain", 'zigui545@gmail.com');
+      }
+      span.innerHTML = 'Copied !'
+    });
+
+  </script>
+  </body>
+
+</html>
